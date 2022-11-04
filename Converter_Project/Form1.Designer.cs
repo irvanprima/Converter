@@ -54,11 +54,24 @@
             this.label6 = new System.Windows.Forms.Label();
             this.HariBox = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // KonversiSuhu
@@ -316,6 +329,18 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -323,6 +348,66 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pemuaian Panjang";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(185, 165);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 32);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "α :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(176, 200);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 32);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Δt :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(176, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 32);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Lo :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(284, 84);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 32);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Diketahui :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(303, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(216, 48);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "ΔL = Lo.α.Δt";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(151, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 48);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Rumus :";
             // 
             // tabPage4
             // 
@@ -344,6 +429,60 @@
             this.tabPage5.Text = "Pemuaian Volume";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(173, 291);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 32);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "ΔL :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(231, 133);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Panjang awal (cm)";
+            this.textBox1.Size = new System.Drawing.Size(241, 31);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(231, 168);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Koefisien muai panjang (℃)";
+            this.textBox2.Size = new System.Drawing.Size(241, 31);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(231, 203);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Perubahan suhu (℃)";
+            this.textBox3.Size = new System.Drawing.Size(241, 31);
+            this.textBox3.TabIndex = 14;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(231, 294);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(241, 31);
+            this.textBox4.TabIndex = 15;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(292, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 34);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Jawab";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -359,6 +498,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -393,5 +534,17 @@
         private TabPage tabPage3;
         private TabPage tabPage4;
         private TabPage tabPage5;
+        private Label label13;
+        private Label label12;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private TextBox textBox1;
+        private Label label11;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private Button button1;
     }
 }
