@@ -32,6 +32,9 @@ namespace Converter_Project
 
         //Waktu
         Double detik, menit, jam, hari;
+
+        
+
         private void KonversiWaktu_Click(object sender, EventArgs e)
         {
             menit = Convert.ToDouble(MenitBox.Text);
@@ -51,5 +54,83 @@ namespace Converter_Project
             JamBox.Text = "";
             HariBox.Text = "";
         }
+
+        //PEMUAIAN PANJANG
+        Double PA, KMP, PS;
+        /*
+        PA = Panjang Awal
+        KMP = Koefisien Muai Panjang
+        PS = Perubahan Suhu
+        */
+        Double PP; // Pemuaian panjang
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PA = Convert.ToDouble(PABox.Text);
+            KMP = Convert.ToDouble(KMPBox.Text);
+            PS = Convert.ToDouble(PSBox.Text);
+            
+            PP = (PA * KMP * PS);
+
+            PPBox.Text = Convert.ToString(PP);
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PABox.Text = "";
+            KMPBox.Text = "";
+            PSBox.Text = "";
+            PPBox.Text = "";
+        }
+
+        //PEMUAIAN LUAS
+        Double LA, KML;
+        /*
+        LA = Luas Awal 
+        KML = Koefisien muai luas
+         */
+        Double PL; //Pemuaian luas
+        private void LuasJawabPemuaian_Click(object sender, EventArgs e)
+        {
+            LA = Convert.ToDouble(LABox.Text);
+            KML = Convert.ToDouble(KMLBox.Text);
+            PS = Convert.ToDouble(PSBox2.Text);
+
+            PL = (LA * KML * PS);
+
+            PLBox.Text = Convert.ToString(PL);
+        }
+        private void button9_Click(object sender, EventArgs e)
+        {
+            LABox.Text = "";
+            KMLBox.Text = "";
+            PSBox2.Text = "";
+            PLBox.Text = "";
+        }
+
+        //PEMUAIAN VOLUME
+        Double VA, KMV;
+        /*
+        LA = Luas Awal 
+        KMV = Koefisien muai volume
+         */
+        Double PV; //Pemuaian volume
+        private void button12_Click(object sender, EventArgs e)
+        {
+            VA = Convert.ToDouble(VABox.Text);
+            KMV = Convert.ToDouble(KMVBox.Text);
+            PS = Convert.ToDouble(PSBox3.Text);
+
+            PV = (VA * KMV * PS);
+
+            PVBox.Text = Convert.ToString(PV);
+        }
+        private void VolumeResetPemuaian_Click(object sender, EventArgs e)
+        {
+            VABox.Text = "";
+            KMVBox.Text = "";
+            PSBox3.Text = "";
+            PVBox.Text = "";
+        }
+
+
     }
 }
