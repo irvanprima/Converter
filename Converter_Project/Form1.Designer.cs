@@ -56,12 +56,12 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.PanjangPAfterBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.PanjangPBox = new System.Windows.Forms.TextBox();
+            this.PAAfterBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.PanjangResetPemuaian = new System.Windows.Forms.Button();
@@ -79,17 +79,17 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LuasPAfterBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.LuasPBox = new System.Windows.Forms.TextBox();
+            this.LAAfterBox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.LuasResetPemuaian = new System.Windows.Forms.Button();
             this.LuasJawabPemuaian = new System.Windows.Forms.Button();
-            this.PLBox = new System.Windows.Forms.TextBox();
+            this.LPBox = new System.Windows.Forms.TextBox();
             this.PSBox2 = new System.Windows.Forms.TextBox();
             this.KMLBox = new System.Windows.Forms.TextBox();
             this.LABox = new System.Windows.Forms.TextBox();
@@ -102,17 +102,17 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.volumePAfterBox = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.VolumePBox = new System.Windows.Forms.TextBox();
+            this.VAAfterBox = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.VolumeResetPemuaian = new System.Windows.Forms.Button();
             this.VolumeJawabPemuaian = new System.Windows.Forms.Button();
-            this.PVBox = new System.Windows.Forms.TextBox();
+            this.VPBox = new System.Windows.Forms.TextBox();
             this.PSBox3 = new System.Windows.Forms.TextBox();
             this.KMVBox = new System.Windows.Forms.TextBox();
             this.VABox = new System.Windows.Forms.TextBox();
@@ -122,6 +122,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -236,10 +237,11 @@
             this.TabControl.Controls.Add(this.tabPage3);
             this.TabControl.Controls.Add(this.tabPage4);
             this.TabControl.Controls.Add(this.tabPage5);
+            this.TabControl.Controls.Add(this.tabPage6);
             this.TabControl.Location = new System.Drawing.Point(-1, 2);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(687, 389);
+            this.TabControl.Size = new System.Drawing.Size(687, 353);
             this.TabControl.TabIndex = 12;
             // 
             // tabPage1
@@ -258,7 +260,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(679, 351);
+            this.tabPage1.Size = new System.Drawing.Size(679, 315);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Suhu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -279,7 +281,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(679, 351);
+            this.tabPage2.Size = new System.Drawing.Size(679, 315);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Waktu";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -387,12 +389,12 @@
             // 
             this.tabPage3.Controls.Add(this.label30);
             this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Controls.Add(this.textBox11);
+            this.tabPage3.Controls.Add(this.PanjangPAfterBox);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.button7);
             this.tabPage3.Controls.Add(this.button8);
-            this.tabPage3.Controls.Add(this.textBox9);
-            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.PanjangPBox);
+            this.tabPage3.Controls.Add(this.PAAfterBox);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.PanjangResetPemuaian);
@@ -410,7 +412,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(679, 351);
+            this.tabPage3.Size = new System.Drawing.Size(679, 315);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pemuaian Panjang";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -435,13 +437,13 @@
             this.label31.TabIndex = 26;
             this.label31.Text = "L = Lo + ΔL";
             // 
-            // textBox11
+            // PanjangPAfterBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(405, 219);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(241, 31);
-            this.textBox11.TabIndex = 25;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PanjangPAfterBox.Location = new System.Drawing.Point(405, 219);
+            this.PanjangPAfterBox.Name = "PanjangPAfterBox";
+            this.PanjangPAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.PanjangPAfterBox.TabIndex = 25;
+            this.PanjangPAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
             // 
@@ -461,6 +463,7 @@
             this.button7.TabIndex = 23;
             this.button7.Text = "Reset";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -470,22 +473,25 @@
             this.button8.TabIndex = 22;
             this.button8.Text = "Jawab";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // textBox9
+            // PanjangPBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(405, 139);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(241, 31);
-            this.textBox9.TabIndex = 21;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PanjangPBox.Location = new System.Drawing.Point(405, 139);
+            this.PanjangPBox.Name = "PanjangPBox";
+            this.PanjangPBox.PlaceholderText = "Panjang Pemuaian";
+            this.PanjangPBox.Size = new System.Drawing.Size(241, 31);
+            this.PanjangPBox.TabIndex = 21;
+            this.PanjangPBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // PAAfterBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(405, 104);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(241, 31);
-            this.textBox10.TabIndex = 20;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PAAfterBox.Location = new System.Drawing.Point(405, 104);
+            this.PAAfterBox.Name = "PAAfterBox";
+            this.PAAfterBox.PlaceholderText = "Panjang awal (cm)";
+            this.PAAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.PAAfterBox.TabIndex = 20;
+            this.PAAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -626,17 +632,17 @@
             // 
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.textBox1);
+            this.tabPage4.Controls.Add(this.LuasPAfterBox);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.textBox3);
+            this.tabPage4.Controls.Add(this.LuasPBox);
+            this.tabPage4.Controls.Add(this.LAAfterBox);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.LuasResetPemuaian);
             this.tabPage4.Controls.Add(this.LuasJawabPemuaian);
-            this.tabPage4.Controls.Add(this.PLBox);
+            this.tabPage4.Controls.Add(this.LPBox);
             this.tabPage4.Controls.Add(this.PSBox2);
             this.tabPage4.Controls.Add(this.KMLBox);
             this.tabPage4.Controls.Add(this.LABox);
@@ -649,7 +655,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(679, 351);
+            this.tabPage4.Size = new System.Drawing.Size(679, 315);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Pemuaian Luas";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -668,19 +674,19 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(424, 7);
+            this.label15.Location = new System.Drawing.Point(415, 7);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(217, 48);
+            this.label15.Size = new System.Drawing.Size(223, 48);
             this.label15.TabIndex = 48;
-            this.label15.Text = "A = Ao + ΔL";
+            this.label15.Text = "A = Ao + ΔA";
             // 
-            // textBox1
+            // LuasPAfterBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(405, 219);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 31);
-            this.textBox1.TabIndex = 47;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LuasPAfterBox.Location = new System.Drawing.Point(405, 219);
+            this.LuasPAfterBox.Name = "LuasPAfterBox";
+            this.LuasPAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.LuasPAfterBox.TabIndex = 47;
+            this.LuasPAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
@@ -700,6 +706,7 @@
             this.button3.TabIndex = 45;
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -709,32 +716,33 @@
             this.button4.TabIndex = 44;
             this.button4.Text = "Jawab";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox2
+            // LuasPBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(405, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 31);
-            this.textBox2.TabIndex = 43;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LuasPBox.Location = new System.Drawing.Point(405, 139);
+            this.LuasPBox.Name = "LuasPBox";
+            this.LuasPBox.Size = new System.Drawing.Size(241, 31);
+            this.LuasPBox.TabIndex = 43;
+            this.LuasPBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // LAAfterBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(405, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 31);
-            this.textBox3.TabIndex = 42;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LAAfterBox.Location = new System.Drawing.Point(405, 104);
+            this.LAAfterBox.Name = "LAAfterBox";
+            this.LAAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.LAAfterBox.TabIndex = 42;
+            this.LAAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(349, 136);
+            this.label17.Location = new System.Drawing.Point(344, 136);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 32);
+            this.label17.Size = new System.Drawing.Size(56, 32);
             this.label17.TabIndex = 41;
-            this.label17.Text = "ΔL :";
+            this.label17.Text = "ΔA :";
             // 
             // label18
             // 
@@ -766,13 +774,13 @@
             this.LuasJawabPemuaian.UseVisualStyleBackColor = true;
             this.LuasJawabPemuaian.Click += new System.EventHandler(this.LuasJawabPemuaian_Click);
             // 
-            // PLBox
+            // LPBox
             // 
-            this.PLBox.Location = new System.Drawing.Point(85, 265);
-            this.PLBox.Name = "PLBox";
-            this.PLBox.Size = new System.Drawing.Size(241, 31);
-            this.PLBox.TabIndex = 37;
-            this.PLBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LPBox.Location = new System.Drawing.Point(85, 265);
+            this.LPBox.Name = "LPBox";
+            this.LPBox.Size = new System.Drawing.Size(241, 31);
+            this.LPBox.TabIndex = 37;
+            this.LPBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PSBox2
             // 
@@ -862,17 +870,17 @@
             // 
             this.tabPage5.Controls.Add(this.label21);
             this.tabPage5.Controls.Add(this.label22);
-            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.volumePAfterBox);
             this.tabPage5.Controls.Add(this.label23);
             this.tabPage5.Controls.Add(this.button5);
             this.tabPage5.Controls.Add(this.button6);
-            this.tabPage5.Controls.Add(this.textBox6);
-            this.tabPage5.Controls.Add(this.textBox7);
+            this.tabPage5.Controls.Add(this.VolumePBox);
+            this.tabPage5.Controls.Add(this.VAAfterBox);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.label25);
             this.tabPage5.Controls.Add(this.VolumeResetPemuaian);
             this.tabPage5.Controls.Add(this.VolumeJawabPemuaian);
-            this.tabPage5.Controls.Add(this.PVBox);
+            this.tabPage5.Controls.Add(this.VPBox);
             this.tabPage5.Controls.Add(this.PSBox3);
             this.tabPage5.Controls.Add(this.KMVBox);
             this.tabPage5.Controls.Add(this.VABox);
@@ -885,7 +893,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(679, 351);
+            this.tabPage5.Size = new System.Drawing.Size(679, 315);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Pemuaian Volume";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -910,13 +918,13 @@
             this.label22.TabIndex = 48;
             this.label22.Text = "V = Vo + ΔV";
             // 
-            // textBox5
+            // volumePAfterBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(405, 219);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(241, 31);
-            this.textBox5.TabIndex = 47;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.volumePAfterBox.Location = new System.Drawing.Point(405, 219);
+            this.volumePAfterBox.Name = "volumePAfterBox";
+            this.volumePAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.volumePAfterBox.TabIndex = 47;
+            this.volumePAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -936,6 +944,7 @@
             this.button5.TabIndex = 45;
             this.button5.Text = "Reset";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -945,22 +954,23 @@
             this.button6.TabIndex = 44;
             this.button6.Text = "Jawab";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox6
+            // VolumePBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(405, 139);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 31);
-            this.textBox6.TabIndex = 43;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.VolumePBox.Location = new System.Drawing.Point(405, 139);
+            this.VolumePBox.Name = "VolumePBox";
+            this.VolumePBox.Size = new System.Drawing.Size(241, 31);
+            this.VolumePBox.TabIndex = 43;
+            this.VolumePBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // VAAfterBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(405, 104);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(241, 31);
-            this.textBox7.TabIndex = 42;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.VAAfterBox.Location = new System.Drawing.Point(405, 104);
+            this.VAAfterBox.Name = "VAAfterBox";
+            this.VAAfterBox.Size = new System.Drawing.Size(241, 31);
+            this.VAAfterBox.TabIndex = 42;
+            this.VAAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -1002,13 +1012,13 @@
             this.VolumeJawabPemuaian.UseVisualStyleBackColor = true;
             this.VolumeJawabPemuaian.Click += new System.EventHandler(this.button12_Click);
             // 
-            // PVBox
+            // VPBox
             // 
-            this.PVBox.Location = new System.Drawing.Point(85, 265);
-            this.PVBox.Name = "PVBox";
-            this.PVBox.Size = new System.Drawing.Size(241, 31);
-            this.PVBox.TabIndex = 37;
-            this.PVBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.VPBox.Location = new System.Drawing.Point(85, 265);
+            this.VPBox.Name = "VPBox";
+            this.VPBox.Size = new System.Drawing.Size(241, 31);
+            this.VPBox.TabIndex = 37;
+            this.VPBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PSBox3
             // 
@@ -1094,11 +1104,21 @@
             this.label39.TabIndex = 28;
             this.label39.Text = "ΔV = Vo.γ .Δt";
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 34);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(679, 315);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "About";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // Converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 386);
+            this.ClientSize = new System.Drawing.Size(683, 352);
             this.Controls.Add(this.TabControl);
             this.MaximizeBox = false;
             this.Name = "Converter";
@@ -1163,27 +1183,27 @@
         private Button PanjangResetPemuaian;
         private Label label30;
         private Label label31;
-        private TextBox textBox11;
+        private TextBox PanjangPAfterBox;
         private Label label29;
         private Button button7;
         private Button button8;
-        private TextBox textBox9;
-        private TextBox textBox10;
+        private TextBox PanjangPBox;
+        private TextBox PAAfterBox;
         private Label label7;
         private Label label28;
         private Label label14;
         private Label label15;
-        private TextBox textBox1;
+        private TextBox LuasPAfterBox;
         private Label label16;
         private Button button3;
         private Button button4;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox LuasPBox;
+        private TextBox LAAfterBox;
         private Label label17;
         private Label label18;
         private Button LuasResetPemuaian;
         private Button LuasJawabPemuaian;
-        private TextBox PLBox;
+        private TextBox LPBox;
         private TextBox PSBox2;
         private TextBox KMLBox;
         private TextBox LABox;
@@ -1195,17 +1215,17 @@
         private Label label35;
         private Label label21;
         private Label label22;
-        private TextBox textBox5;
+        private TextBox volumePAfterBox;
         private Label label23;
         private Button button5;
         private Button button6;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox VolumePBox;
+        private TextBox VAAfterBox;
         private Label label24;
         private Label label25;
         private Button VolumeResetPemuaian;
         private Button VolumeJawabPemuaian;
-        private TextBox PVBox;
+        private TextBox VPBox;
         private TextBox PSBox3;
         private TextBox KMVBox;
         private TextBox VABox;
@@ -1215,5 +1235,6 @@
         private Label label37;
         private Label label38;
         private Label label39;
+        private TabPage tabPage6;
     }
 }
