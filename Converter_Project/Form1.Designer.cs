@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Converter));
             this.KonversiSuhu = new System.Windows.Forms.Button();
             this.ResetSuhu = new System.Windows.Forms.Button();
             this.Fahrenheit = new System.Windows.Forms.Label();
@@ -123,12 +124,16 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // KonversiSuhu
@@ -1106,6 +1111,9 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.label42);
+            this.tabPage6.Controls.Add(this.label41);
+            this.tabPage6.Controls.Add(this.label40);
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -1113,6 +1121,36 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "About";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label40.Location = new System.Drawing.Point(197, 6);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(267, 45);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Converter Project";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label41.Location = new System.Drawing.Point(9, 58);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(403, 224);
+            this.label41.TabIndex = 1;
+            this.label41.Text = resources.GetString("label41.Text");
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label42.Location = new System.Drawing.Point(418, 58);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(74, 112);
+            this.label42.TabIndex = 2;
+            this.label42.Text = "Note :\r\nβ = 2.α\r\nγ = 3.α\r\n ";
             // 
             // Converter
             // 
@@ -1135,6 +1173,8 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1236,5 +1276,8 @@
         private Label label38;
         private Label label39;
         private TabPage tabPage6;
+        private Label label42;
+        private Label label41;
+        private Label label40;
     }
 }
