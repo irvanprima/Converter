@@ -124,9 +124,9 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -138,7 +138,7 @@
             // 
             // KonversiSuhu
             // 
-            this.KonversiSuhu.Location = new System.Drawing.Point(112, 193);
+            this.KonversiSuhu.Location = new System.Drawing.Point(114, 120);
             this.KonversiSuhu.Name = "KonversiSuhu";
             this.KonversiSuhu.Size = new System.Drawing.Size(105, 34);
             this.KonversiSuhu.TabIndex = 0;
@@ -148,7 +148,7 @@
             // 
             // ResetSuhu
             // 
-            this.ResetSuhu.Location = new System.Drawing.Point(229, 193);
+            this.ResetSuhu.Location = new System.Drawing.Point(229, 120);
             this.ResetSuhu.Name = "ResetSuhu";
             this.ResetSuhu.Size = new System.Drawing.Size(105, 34);
             this.ResetSuhu.TabIndex = 1;
@@ -158,7 +158,7 @@
             // 
             // Fahrenheit
             // 
-            this.Fahrenheit.Location = new System.Drawing.Point(360, 93);
+            this.Fahrenheit.Location = new System.Drawing.Point(7, 171);
             this.Fahrenheit.Name = "Fahrenheit";
             this.Fahrenheit.Size = new System.Drawing.Size(101, 38);
             this.Fahrenheit.TabIndex = 2;
@@ -167,7 +167,7 @@
             // 
             // Reamur
             // 
-            this.Reamur.Location = new System.Drawing.Point(360, 151);
+            this.Reamur.Location = new System.Drawing.Point(7, 208);
             this.Reamur.Name = "Reamur";
             this.Reamur.Size = new System.Drawing.Size(101, 38);
             this.Reamur.TabIndex = 3;
@@ -176,7 +176,7 @@
             // 
             // Kelvin
             // 
-            this.Kelvin.Location = new System.Drawing.Point(360, 219);
+            this.Kelvin.Location = new System.Drawing.Point(7, 246);
             this.Kelvin.Name = "Kelvin";
             this.Kelvin.Size = new System.Drawing.Size(101, 38);
             this.Kelvin.TabIndex = 4;
@@ -185,32 +185,33 @@
             // 
             // ReamurBox
             // 
-            this.ReamurBox.Location = new System.Drawing.Point(467, 155);
+            this.ReamurBox.Location = new System.Drawing.Point(114, 212);
             this.ReamurBox.Name = "ReamurBox";
-            this.ReamurBox.Size = new System.Drawing.Size(163, 31);
+            this.ReamurBox.Size = new System.Drawing.Size(220, 31);
             this.ReamurBox.TabIndex = 6;
             this.ReamurBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // KelvinBox
             // 
-            this.KelvinBox.Location = new System.Drawing.Point(467, 222);
+            this.KelvinBox.Location = new System.Drawing.Point(114, 249);
             this.KelvinBox.Name = "KelvinBox";
-            this.KelvinBox.Size = new System.Drawing.Size(163, 31);
+            this.KelvinBox.Size = new System.Drawing.Size(220, 31);
             this.KelvinBox.TabIndex = 7;
             this.KelvinBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CelciusBox
             // 
-            this.CelciusBox.Location = new System.Drawing.Point(114, 133);
+            this.CelciusBox.Location = new System.Drawing.Point(114, 73);
             this.CelciusBox.Name = "CelciusBox";
             this.CelciusBox.PlaceholderText = "Masukkan input dalam ℃";
             this.CelciusBox.Size = new System.Drawing.Size(220, 31);
             this.CelciusBox.TabIndex = 9;
             this.CelciusBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            
             // 
             // Celcius
             // 
-            this.Celcius.Location = new System.Drawing.Point(20, 129);
+            this.Celcius.Location = new System.Drawing.Point(20, 69);
             this.Celcius.Name = "Celcius";
             this.Celcius.Size = new System.Drawing.Size(88, 38);
             this.Celcius.TabIndex = 8;
@@ -219,16 +220,16 @@
             // 
             // FahrenheitBox
             // 
-            this.FahrenheitBox.Location = new System.Drawing.Point(467, 97);
+            this.FahrenheitBox.Location = new System.Drawing.Point(114, 175);
             this.FahrenheitBox.Name = "FahrenheitBox";
-            this.FahrenheitBox.Size = new System.Drawing.Size(163, 31);
+            this.FahrenheitBox.Size = new System.Drawing.Size(220, 31);
             this.FahrenheitBox.TabIndex = 10;
             this.FahrenheitBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(219, 13);
+            this.label1.Location = new System.Drawing.Point(219, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(245, 47);
             this.label1.TabIndex = 11;
@@ -727,6 +728,7 @@
             // 
             this.LuasPBox.Location = new System.Drawing.Point(405, 139);
             this.LuasPBox.Name = "LuasPBox";
+            this.LuasPBox.PlaceholderText = "Luas pemuaian";
             this.LuasPBox.Size = new System.Drawing.Size(241, 31);
             this.LuasPBox.TabIndex = 43;
             this.LuasPBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -735,6 +737,7 @@
             // 
             this.LAAfterBox.Location = new System.Drawing.Point(405, 104);
             this.LAAfterBox.Name = "LAAfterBox";
+            this.LAAfterBox.PlaceholderText = "Luas awal (cm²)";
             this.LAAfterBox.Size = new System.Drawing.Size(241, 31);
             this.LAAfterBox.TabIndex = 42;
             this.LAAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -791,6 +794,7 @@
             // 
             this.PSBox2.Location = new System.Drawing.Point(85, 174);
             this.PSBox2.Name = "PSBox2";
+            this.PSBox2.PlaceholderText = "Perubahan suhu (℃)";
             this.PSBox2.Size = new System.Drawing.Size(241, 31);
             this.PSBox2.TabIndex = 36;
             this.PSBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -799,6 +803,7 @@
             // 
             this.KMLBox.Location = new System.Drawing.Point(85, 139);
             this.KMLBox.Name = "KMLBox";
+            this.KMLBox.PlaceholderText = "Koefisien muai luas (℃)";
             this.KMLBox.Size = new System.Drawing.Size(241, 31);
             this.KMLBox.TabIndex = 35;
             this.KMLBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -807,6 +812,7 @@
             // 
             this.LABox.Location = new System.Drawing.Point(85, 104);
             this.LABox.Name = "LABox";
+            this.LABox.PlaceholderText = "Luas awal (cm²)";
             this.LABox.Size = new System.Drawing.Size(241, 31);
             this.LABox.TabIndex = 34;
             this.LABox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -965,6 +971,7 @@
             // 
             this.VolumePBox.Location = new System.Drawing.Point(405, 139);
             this.VolumePBox.Name = "VolumePBox";
+            this.VolumePBox.PlaceholderText = "Pemuaian volume";
             this.VolumePBox.Size = new System.Drawing.Size(241, 31);
             this.VolumePBox.TabIndex = 43;
             this.VolumePBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -973,6 +980,7 @@
             // 
             this.VAAfterBox.Location = new System.Drawing.Point(405, 104);
             this.VAAfterBox.Name = "VAAfterBox";
+            this.VAAfterBox.PlaceholderText = "Volume awal (cm³)";
             this.VAAfterBox.Size = new System.Drawing.Size(241, 31);
             this.VAAfterBox.TabIndex = 42;
             this.VAAfterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1029,6 +1037,7 @@
             // 
             this.PSBox3.Location = new System.Drawing.Point(85, 174);
             this.PSBox3.Name = "PSBox3";
+            this.PSBox3.PlaceholderText = "Perubahan suhu (℃)";
             this.PSBox3.Size = new System.Drawing.Size(241, 31);
             this.PSBox3.TabIndex = 36;
             this.PSBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1037,6 +1046,7 @@
             // 
             this.KMVBox.Location = new System.Drawing.Point(85, 139);
             this.KMVBox.Name = "KMVBox";
+            this.KMVBox.PlaceholderText = "Koefisien muai volume (℃)";
             this.KMVBox.Size = new System.Drawing.Size(241, 31);
             this.KMVBox.TabIndex = 35;
             this.KMVBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1045,6 +1055,7 @@
             // 
             this.VABox.Location = new System.Drawing.Point(85, 104);
             this.VABox.Name = "VABox";
+            this.VABox.PlaceholderText = "Volume awal (cm³)";
             this.VABox.Size = new System.Drawing.Size(241, 31);
             this.VABox.TabIndex = 34;
             this.VABox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1122,15 +1133,15 @@
             this.tabPage6.Text = "About";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // label40
+            // label42
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.Location = new System.Drawing.Point(197, 6);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(267, 45);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "Converter Project";
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label42.Location = new System.Drawing.Point(418, 58);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(74, 112);
+            this.label42.TabIndex = 2;
+            this.label42.Text = "Note :\r\nβ = 2.α\r\nγ = 3.α\r\n ";
             // 
             // label41
             // 
@@ -1142,15 +1153,15 @@
             this.label41.TabIndex = 1;
             this.label41.Text = resources.GetString("label41.Text");
             // 
-            // label42
+            // label40
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label42.Location = new System.Drawing.Point(418, 58);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(74, 112);
-            this.label42.TabIndex = 2;
-            this.label42.Text = "Note :\r\nβ = 2.α\r\nγ = 3.α\r\n ";
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label40.Location = new System.Drawing.Point(197, 6);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(267, 45);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Converter Project";
             // 
             // Converter
             // 
