@@ -49,6 +49,7 @@ namespace Converter_Project
             if (double.TryParse(MenitBox.Text, out menit))
             {
                 menit = Convert.ToDouble(MenitBox.Text);
+                
                 detik = (menit * 3600);
                 jam = (menit / 60);
                 hari = (menit / 1440);
@@ -83,7 +84,7 @@ namespace Converter_Project
         Double PP; // Pemuaian panjang
         private void button1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(PPBox.Text, out PP))
+            if (!Double.TryParse(PPBox.Text, out PP))
             {
                 PA = Convert.ToDouble(PABox.Text);
                 KMP = Convert.ToDouble(KMPBox.Text);
@@ -93,9 +94,14 @@ namespace Converter_Project
 
                 PPBox.Text = Convert.ToString(PP);
             }
-            else
+            /*else if (Double.TryParse(PPBox.Text, out PP))
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
+                MessageBox.Show("Masukkan angka", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+            else 
+            {
+               MessageBox.Show("Tekan tombol RESET", "Error",
                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
