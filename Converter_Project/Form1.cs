@@ -82,9 +82,41 @@ namespace Converter_Project
         PPA = PanjangPAfterBox
         */
         Double PP; // Pemuaian panjang
+        private void PABox_TextChanged(object sender, EventArgs e)
+        {
+            PanjangJawabPemuaian.Enabled = true;
+        }
+        private void KMPBox_TextChanged(object sender, EventArgs e)
+        {
+            PanjangJawabPemuaian.Enabled = true;
+        }
+        private void PSBox_TextChanged(object sender, EventArgs e)
+        {
+            PanjangJawabPemuaian.Enabled = true;
+        }
+        private void PPBox_TextChanged(object sender, EventArgs e)
+        {
+            PanjangJawabPemuaian.Enabled = false;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!Double.TryParse(PPBox.Text, out PP))
+            try
+            {
+                // PP = Double.Parse(PPBox.Text);
+
+                PA = Convert.ToDouble(PABox.Text);
+                KMP = Convert.ToDouble(KMPBox.Text);
+                PS = Convert.ToDouble(PSBox.Text);
+
+                PP = (PA * KMP * PS);
+
+                PPBox.Text = Convert.ToString(PP);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Masukkan angka. Err: "+ ex.Message, "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*if (!Double.TryParse(PPBox.Text, out PP))
             {
                 PA = Convert.ToDouble(PABox.Text);
                 KMP = Convert.ToDouble(KMPBox.Text);
@@ -93,17 +125,14 @@ namespace Converter_Project
                 PP = (PA * KMP * PS);
 
                 PPBox.Text = Convert.ToString(PP);
+                
             }
-            /*else if (Double.TryParse(PPBox.Text, out PP))
+            else 
             {
                 MessageBox.Show("Masukkan angka", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
-            else 
-            {
-               MessageBox.Show("Tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -111,6 +140,8 @@ namespace Converter_Project
             KMPBox.Text = "";
             PSBox.Text = "";
             PPBox.Text = "";
+            PanjangJawabPemuaian.Enabled = false;
+
         }
         private void button8_Click(object sender, EventArgs e)
         {
