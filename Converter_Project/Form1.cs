@@ -30,9 +30,14 @@ namespace Converter_Project
             }
             else 
             {
-                MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
+                MessageBox.Show("Masukkan angka/ tekan RESET", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            KonversiSuhu.Enabled = false;
+        }
+        private void CelciusBox_TextChanged(object sender, EventArgs e)
+        {
+            KonversiSuhu.Enabled = true;
         }
         private void Reset_Click(object sender, EventArgs e)
         {
@@ -40,6 +45,7 @@ namespace Converter_Project
             FahrenheitBox.Text = "";
             ReamurBox.Text = "";
             KelvinBox.Text = "";
+            KonversiSuhu.Enabled = false;
         }
 
         //Waktu
@@ -61,9 +67,14 @@ namespace Converter_Project
             }
             else
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
+               MessageBox.Show("Masukkan angka/ tekan RESET: ", "Error",
                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            KonversiWaktu.Enabled = false;
+        }
+        private void MenitBox_TextChanged(object sender, EventArgs e)
+        {
+            KonversiWaktu.Enabled= true;
         }
         private void ResetWaktu_Click(object sender, EventArgs e)
         {
@@ -82,28 +93,10 @@ namespace Converter_Project
         PPA = PanjangPAfterBox
         */
         Double PP; // Pemuaian panjang
-        private void PABox_TextChanged(object sender, EventArgs e)
-        {
-            PanjangJawabPemuaian.Enabled = true;
-        }
-        private void KMPBox_TextChanged(object sender, EventArgs e)
-        {
-            PanjangJawabPemuaian.Enabled = true;
-        }
-        private void PSBox_TextChanged(object sender, EventArgs e)
-        {
-            PanjangJawabPemuaian.Enabled = true;
-        }
-        private void PPBox_TextChanged(object sender, EventArgs e)
-        {
-            PanjangJawabPemuaian.Enabled = false;
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                // PP = Double.Parse(PPBox.Text);
-
                 PA = Convert.ToDouble(PABox.Text);
                 KMP = Convert.ToDouble(KMPBox.Text);
                 PS = Convert.ToDouble(PSBox.Text);
@@ -111,28 +104,13 @@ namespace Converter_Project
                 PP = (PA * KMP * PS);
 
                 PPBox.Text = Convert.ToString(PP);
-            } catch (Exception ex)
+            } 
+            catch (Exception ex)
             {
-                MessageBox.Show("Masukkan angka. Err: "+ ex.Message, "Error",
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            /*if (!Double.TryParse(PPBox.Text, out PP))
-            {
-                PA = Convert.ToDouble(PABox.Text);
-                KMP = Convert.ToDouble(KMPBox.Text);
-                PS = Convert.ToDouble(PSBox.Text);
-
-                PP = (PA * KMP * PS);
-
-                PPBox.Text = Convert.ToString(PP);
-                
-            }
-            else 
-            {
-                MessageBox.Show("Masukkan angka", "Error",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-
+            
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -140,12 +118,11 @@ namespace Converter_Project
             KMPBox.Text = "";
             PSBox.Text = "";
             PPBox.Text = "";
-            PanjangJawabPemuaian.Enabled = false;
-
+            
         }
         private void button8_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(PanjangPAfterBox.Text, out PPA))
+            try
             {
                 PA = Convert.ToDouble(PAAfterBox.Text);
                 PP = Convert.ToDouble(PanjangPBox.Text);
@@ -154,10 +131,10 @@ namespace Converter_Project
 
                 PanjangPAfterBox.Text = Convert.ToString(PPA);
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void button7_Click(object sender, EventArgs e)
@@ -177,7 +154,7 @@ namespace Converter_Project
         Double PL; //Pemuaian luas
         private void LuasJawabPemuaian_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(LPBox.Text, out PL))
+            try
             {
                 LA = Convert.ToDouble(LABox.Text);
                 KML = Convert.ToDouble(KMLBox.Text);
@@ -187,11 +164,12 @@ namespace Converter_Project
 
                 LPBox.Text = Convert.ToString(PL);
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
         private void button9_Click(object sender, EventArgs e)
         {
@@ -202,7 +180,7 @@ namespace Converter_Project
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(LuasPAfterBox.Text, out PLA))
+            try
             {
                 LA = Convert.ToDouble(LAAfterBox.Text);
                 PL = Convert.ToDouble(LuasPBox.Text);
@@ -211,10 +189,10 @@ namespace Converter_Project
 
                 LuasPAfterBox.Text = Convert.ToString(PLA);
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void button3_Click(object sender, EventArgs e)
@@ -234,7 +212,7 @@ namespace Converter_Project
         Double PV; //Pemuaian volume
         private void button12_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(VPBox.Text, out PV))
+            try
             {
                 VA = Convert.ToDouble(VABox.Text);
                 KMV = Convert.ToDouble(KMVBox.Text);
@@ -244,10 +222,10 @@ namespace Converter_Project
 
                 VPBox.Text = Convert.ToString(PV);
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void VolumeResetPemuaian_Click(object sender, EventArgs e)
@@ -259,7 +237,7 @@ namespace Converter_Project
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(volumePAfterBox.Text, out PVA))
+            try
             {
                 VA = Convert.ToDouble(VAAfterBox.Text);
                 PV = Convert.ToDouble(VolumePBox.Text);
@@ -268,10 +246,10 @@ namespace Converter_Project
 
                 volumePAfterBox.Text = Convert.ToString(PVA);
             }
-            else 
+            catch (Exception ex)
             {
-               MessageBox.Show("Masukkan angka atau tekan tombol RESET", "Error",
-               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Masukkan angka/ tekan RESET: " + $"'{ex.Message}'", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void button5_Click(object sender, EventArgs e)
@@ -280,7 +258,6 @@ namespace Converter_Project
             VolumePBox.Text = "";
             volumePAfterBox.Text = "";
         }
-
 
     }
 }
