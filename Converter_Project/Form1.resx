@@ -57,14 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label41.Text" xml:space="preserve">
-    <value>    Projek untuk memenuhi tugas mata kuliah 
-pemrograman desktop dan embedded.
-    Converter Project terdiri dari :
-1. Converter Suhu
-2. Converter Waktu
-3. Converter Pemuaian Panjang
-4. Converter Pemuaian Luas
-5. Converter Pemuaian Volume</value>
-  </data>
 </root>

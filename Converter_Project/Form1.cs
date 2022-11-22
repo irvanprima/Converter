@@ -47,6 +47,10 @@ namespace Converter_Project
             KelvinBox.Text = "";
             KonversiSuhu.Enabled = false;
         }
+        private void Tampil_Cuaca_Click(object sender, EventArgs e)
+        {
+
+        }
 
         //Waktu
         Double detik, menit, jam, hari;
@@ -146,11 +150,15 @@ namespace Converter_Project
 
         //PEMUAIAN LUAS
         Double LA, KML, PLA;
+
+        
+
+
         /*
-        LA = Luas Awal 
-        KML = Koefisien muai luas
-        PLA = Pemuaian luas after
-        */
+LA = Luas Awal 
+KML = Koefisien muai luas
+PLA = Pemuaian luas after
+*/
         Double PL; //Pemuaian luas
         private void LuasJawabPemuaian_Click(object sender, EventArgs e)
         {
@@ -258,6 +266,8 @@ namespace Converter_Project
             VolumePBox.Text = "";
             volumePAfterBox.Text = "";
         }
+
+
 
     }
 }

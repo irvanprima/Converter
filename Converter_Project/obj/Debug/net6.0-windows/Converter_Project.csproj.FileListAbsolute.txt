@@ -15,3 +15,13 @@ C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\ob
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\Converter_Project.genruntimeconfig.cache
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\ref\Converter_Project.dll
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\Converter_Project.Converter.resources
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\Converter_Project.csproj.CopyComplete
