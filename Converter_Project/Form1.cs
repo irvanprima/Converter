@@ -1,6 +1,8 @@
 using Microsoft.VisualBasic;
 using System;
 using System.Linq.Expressions;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace Converter_Project
 {
@@ -47,10 +49,64 @@ namespace Converter_Project
             KelvinBox.Text = "";
             KonversiSuhu.Enabled = false;
         }
-        private void Tampil_Cuaca_Click(object sender, EventArgs e)
-        {
 
+        //cuaca
+
+        string APIKey = "9125fe4caf9b4adb07b6357fc12dd3cc";
+        private void btnTampilkan_Click(object sender, EventArgs e)
+        {
+            tampilCuaca();
         }
+
+        void tampilCuaca()
+        {
+            using (WebClient web = new WebClient ())
+            {
+                try
+                {
+                    string namaKota = TBKota.Text.ToString();
+
+                    string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q=" + namaKota + "&appid=" + APIKey);
+                    var json = web.DownloadString(url);
+                    InfoCuaca.root Info = JsonConvert.DeserializeObject<InfoCuaca.root>(json);
+
+                    picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                    lblCuaca.Text = Info.weather[0].main;
+                    lblDetailCuaca.Text = Info.weather[0].description;
+                    lblTerbenam.Text = convertDateTime(Info.sys.sunset).ToString();
+                    lblTerbit.Text = convertDateTime(Info.sys.sunrise).ToString();
+
+                    lblKecepatanAngin.Text = Info.wind.speed + " Knot".ToString();
+                    lblTekananUdara.Text = Info.main.pressure + " PSi".ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Masukkan nama kota\n" + $"'{ex.Message}'", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        DateTime convertDateTime(long second)
+        {
+            DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
+            day = day.AddSeconds(second).ToLocalTime();
+
+            return day;
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            TBKota.Text = " ";
+            lblCuaca.Text = "N/A";
+            lblDetailCuaca.Text = "N/A";
+            lblTerbenam.Text = "N/A";
+            lblTerbit.Text = "N/A";
+            lblKecepatanAngin.Text = "N/A";
+            lblTekananUdara.Text = "N/A";
+            picIcon.Image = null;
+        }
+
 
         //Waktu
         Double detik, menit, jam, hari;
@@ -150,15 +206,11 @@ namespace Converter_Project
 
         //PEMUAIAN LUAS
         Double LA, KML, PLA;
-
-        
-
-
         /*
-LA = Luas Awal 
-KML = Koefisien muai luas
-PLA = Pemuaian luas after
-*/
+        LA = Luas Awal 
+        KML = Koefisien muai luas
+        PLA = Pemuaian luas after
+        */
         Double PL; //Pemuaian luas
         private void LuasJawabPemuaian_Click(object sender, EventArgs e)
         {
@@ -266,8 +318,6 @@ PLA = Pemuaian luas after
             VolumePBox.Text = "";
             volumePAfterBox.Text = "";
         }
-
-
 
     }
 }

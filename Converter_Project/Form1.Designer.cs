@@ -42,21 +42,22 @@
             this.TabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblDetailCuaca = new System.Windows.Forms.Label();
+            this.lblCuaca = new System.Windows.Forms.Label();
+            this.picIcon = new System.Windows.Forms.PictureBox();
+            this.lblTekananUdara = new System.Windows.Forms.Label();
+            this.lblKecepatanAngin = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.lblTerbit = new System.Windows.Forms.Label();
+            this.lblTerbenam = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnTampilkan = new System.Windows.Forms.Button();
+            this.TBKota = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.JamBox = new System.Windows.Forms.TextBox();
@@ -144,7 +145,7 @@
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -289,21 +290,22 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.label54);
-            this.tabPage7.Controls.Add(this.label53);
-            this.tabPage7.Controls.Add(this.pictureBox1);
-            this.tabPage7.Controls.Add(this.label52);
-            this.tabPage7.Controls.Add(this.label51);
+            this.tabPage7.Controls.Add(this.button1);
+            this.tabPage7.Controls.Add(this.lblDetailCuaca);
+            this.tabPage7.Controls.Add(this.lblCuaca);
+            this.tabPage7.Controls.Add(this.picIcon);
+            this.tabPage7.Controls.Add(this.lblTekananUdara);
+            this.tabPage7.Controls.Add(this.lblKecepatanAngin);
             this.tabPage7.Controls.Add(this.label50);
             this.tabPage7.Controls.Add(this.label49);
             this.tabPage7.Controls.Add(this.label48);
             this.tabPage7.Controls.Add(this.label47);
-            this.tabPage7.Controls.Add(this.label46);
-            this.tabPage7.Controls.Add(this.label44);
+            this.tabPage7.Controls.Add(this.lblTerbit);
+            this.tabPage7.Controls.Add(this.lblTerbenam);
             this.tabPage7.Controls.Add(this.label42);
             this.tabPage7.Controls.Add(this.label41);
-            this.tabPage7.Controls.Add(this.button1);
-            this.tabPage7.Controls.Add(this.textBox1);
+            this.tabPage7.Controls.Add(this.btnTampilkan);
+            this.tabPage7.Controls.Add(this.TBKota);
             this.tabPage7.Controls.Add(this.label40);
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Name = "tabPage7";
@@ -313,155 +315,171 @@
             this.tabPage7.Text = "Cuaca";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // label54
+            // button1
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(234, 199);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(44, 25);
-            this.label54.TabIndex = 15;
-            this.label54.Text = "N/A";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(543, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 35);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label53
+            // lblDetailCuaca
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(234, 159);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(44, 25);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "N/A";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDetailCuaca.AutoSize = true;
+            this.lblDetailCuaca.Location = new System.Drawing.Point(207, 199);
+            this.lblDetailCuaca.Name = "lblDetailCuaca";
+            this.lblDetailCuaca.Size = new System.Drawing.Size(44, 25);
+            this.lblDetailCuaca.TabIndex = 15;
+            this.lblDetailCuaca.Text = "N/A";
+            this.lblDetailCuaca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // lblCuaca
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(259, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 57);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.lblCuaca.AutoSize = true;
+            this.lblCuaca.Location = new System.Drawing.Point(207, 159);
+            this.lblCuaca.Name = "lblCuaca";
+            this.lblCuaca.Size = new System.Drawing.Size(44, 25);
+            this.lblCuaca.TabIndex = 14;
+            this.lblCuaca.Text = "N/A";
+            this.lblCuaca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label52
+            // picIcon
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(502, 199);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(44, 25);
-            this.label52.TabIndex = 12;
-            this.label52.Text = "N/A";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.picIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picIcon.Location = new System.Drawing.Point(259, 79);
+            this.picIcon.Name = "picIcon";
+            this.picIcon.Size = new System.Drawing.Size(135, 57);
+            this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIcon.TabIndex = 13;
+            this.picIcon.TabStop = false;
             // 
-            // label51
+            // lblTekananUdara
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(502, 159);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(44, 25);
-            this.label51.TabIndex = 11;
-            this.label51.Text = "N/A";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTekananUdara.AutoSize = true;
+            this.lblTekananUdara.Location = new System.Drawing.Point(559, 199);
+            this.lblTekananUdara.Name = "lblTekananUdara";
+            this.lblTekananUdara.Size = new System.Drawing.Size(44, 25);
+            this.lblTekananUdara.TabIndex = 12;
+            this.lblTekananUdara.Text = "N/A";
+            this.lblTekananUdara.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblKecepatanAngin
+            // 
+            this.lblKecepatanAngin.AutoSize = true;
+            this.lblKecepatanAngin.Location = new System.Drawing.Point(559, 159);
+            this.lblKecepatanAngin.Name = "lblKecepatanAngin";
+            this.lblKecepatanAngin.Size = new System.Drawing.Size(44, 25);
+            this.lblKecepatanAngin.TabIndex = 11;
+            this.lblKecepatanAngin.Text = "N/A";
+            this.lblKecepatanAngin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(369, 199);
+            this.label50.Location = new System.Drawing.Point(417, 199);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(127, 25);
+            this.label50.Size = new System.Drawing.Size(136, 25);
             this.label50.TabIndex = 10;
-            this.label50.Text = "Tekanan Udara";
+            this.label50.Text = "Tekanan Udara :";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(105, 199);
+            this.label49.Location = new System.Drawing.Point(83, 199);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(109, 25);
+            this.label49.Size = new System.Drawing.Size(118, 25);
             this.label49.TabIndex = 9;
-            this.label49.Text = "Detail Cuaca";
+            this.label49.Text = "Detail Cuaca :";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(159, 239);
+            this.label48.Location = new System.Drawing.Point(137, 239);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(55, 25);
+            this.label48.Size = new System.Drawing.Size(64, 25);
             this.label48.TabIndex = 8;
-            this.label48.Text = "Terbit";
+            this.label48.Text = "Terbit :";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(125, 276);
+            this.label47.Location = new System.Drawing.Point(103, 276);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(89, 25);
+            this.label47.Size = new System.Drawing.Size(98, 25);
             this.label47.TabIndex = 7;
-            this.label47.Text = "Terbenam";
+            this.label47.Text = "Terbenam :";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label46
+            // lblTerbit
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(234, 239);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(44, 25);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "N/A";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTerbit.AutoSize = true;
+            this.lblTerbit.Location = new System.Drawing.Point(207, 239);
+            this.lblTerbit.Name = "lblTerbit";
+            this.lblTerbit.Size = new System.Drawing.Size(44, 25);
+            this.lblTerbit.TabIndex = 6;
+            this.lblTerbit.Text = "N/A";
+            this.lblTerbit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label44
+            // lblTerbenam
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(234, 276);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(44, 25);
-            this.label44.TabIndex = 5;
-            this.label44.Text = "N/A";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTerbenam.AutoSize = true;
+            this.lblTerbenam.Location = new System.Drawing.Point(207, 276);
+            this.lblTerbenam.Name = "lblTerbenam";
+            this.lblTerbenam.Size = new System.Drawing.Size(44, 25);
+            this.lblTerbenam.TabIndex = 5;
+            this.lblTerbenam.Text = "N/A";
+            this.lblTerbenam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(351, 159);
+            this.label42.Location = new System.Drawing.Point(399, 159);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(145, 25);
+            this.label42.Size = new System.Drawing.Size(154, 25);
             this.label42.TabIndex = 4;
-            this.label42.Text = "Kecepatan Angin";
+            this.label42.Text = "Kecepatan Angin :";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(155, 159);
+            this.label41.Location = new System.Drawing.Point(133, 159);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(59, 25);
+            this.label41.Size = new System.Drawing.Size(68, 25);
             this.label41.TabIndex = 3;
-            this.label41.Text = "Cuaca";
+            this.label41.Text = "Cuaca :";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button1
+            // btnTampilkan
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(470, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tampilkan Cuaca";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTampilkan.AutoSize = true;
+            this.btnTampilkan.Location = new System.Drawing.Point(384, 19);
+            this.btnTampilkan.Name = "btnTampilkan";
+            this.btnTampilkan.Size = new System.Drawing.Size(153, 35);
+            this.btnTampilkan.TabIndex = 2;
+            this.btnTampilkan.Text = "Tampilkan Cuaca";
+            this.btnTampilkan.UseVisualStyleBackColor = true;
+            this.btnTampilkan.Click += new System.EventHandler(this.btnTampilkan_Click);
             // 
-            // textBox1
+            // TBKota
             // 
-            this.textBox1.Location = new System.Drawing.Point(187, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 31);
-            this.textBox1.TabIndex = 1;
+            this.TBKota.Location = new System.Drawing.Point(101, 21);
+            this.TBKota.Name = "TBKota";
+            this.TBKota.PlaceholderText = "masukkan nama kota";
+            this.TBKota.Size = new System.Drawing.Size(262, 31);
+            this.TBKota.TabIndex = 1;
+            this.TBKota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(125, 25);
+            this.label40.Location = new System.Drawing.Point(39, 25);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(48, 25);
             this.label40.TabIndex = 0;
@@ -523,7 +541,6 @@
             this.MenitBox.PlaceholderText = "Masukkan input dalam menit";
             this.MenitBox.Size = new System.Drawing.Size(240, 31);
             this.MenitBox.TabIndex = 20;
-            this.MenitBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MenitBox.TextChanged += new System.EventHandler(this.MenitBox_TextChanged);
             // 
             // DetikBox
@@ -571,7 +588,6 @@
             this.KonversiWaktu.TabIndex = 12;
             this.KonversiWaktu.Text = "Konversi";
             this.KonversiWaktu.UseVisualStyleBackColor = true;
-            this.KonversiWaktu.Click += new System.EventHandler(this.KonversiWaktu_Click);
             // 
             // label6
             // 
@@ -678,7 +694,6 @@
             this.button8.TabIndex = 22;
             this.button8.Text = "Jawab";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // PanjangPBox
             // 
@@ -726,7 +741,6 @@
             this.PanjangResetPemuaian.TabIndex = 17;
             this.PanjangResetPemuaian.Text = "Reset";
             this.PanjangResetPemuaian.UseVisualStyleBackColor = true;
-            this.PanjangResetPemuaian.Click += new System.EventHandler(this.button2_Click);
             // 
             // PanjangJawabPemuaian
             // 
@@ -736,7 +750,6 @@
             this.PanjangJawabPemuaian.TabIndex = 16;
             this.PanjangJawabPemuaian.Text = "Jawab";
             this.PanjangJawabPemuaian.UseVisualStyleBackColor = true;
-            this.PanjangJawabPemuaian.Click += new System.EventHandler(this.button1_Click);
             // 
             // PPBox
             // 
@@ -980,7 +993,6 @@
             this.LuasResetPemuaian.TabIndex = 39;
             this.LuasResetPemuaian.Text = "Reset";
             this.LuasResetPemuaian.UseVisualStyleBackColor = true;
-            this.LuasResetPemuaian.Click += new System.EventHandler(this.button9_Click);
             // 
             // LuasJawabPemuaian
             // 
@@ -990,7 +1002,6 @@
             this.LuasJawabPemuaian.TabIndex = 38;
             this.LuasJawabPemuaian.Text = "Jawab";
             this.LuasJawabPemuaian.UseVisualStyleBackColor = true;
-            this.LuasJawabPemuaian.Click += new System.EventHandler(this.LuasJawabPemuaian_Click);
             // 
             // LPBox
             // 
@@ -1244,7 +1255,6 @@
             this.VolumeJawabPemuaian.TabIndex = 38;
             this.VolumeJawabPemuaian.Text = "Jawab";
             this.VolumeJawabPemuaian.UseVisualStyleBackColor = true;
-            this.VolumeJawabPemuaian.Click += new System.EventHandler(this.button12_Click);
             // 
             // VPBox
             // 
@@ -1356,7 +1366,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1468,21 +1478,22 @@
         private TabPage tabPage7;
         private Label label43;
         private Label label45;
-        private Label label54;
-        private Label label53;
-        private PictureBox pictureBox1;
-        private Label label52;
-        private Label label51;
+        private Label lblDetailCuaca;
+        private Label lblCuaca;
+        private PictureBox picIcon;
+        private Label lblTekananUdara;
+        private Label lblKecepatanAngin;
         private Label label50;
         private Label label49;
         private Label label48;
         private Label label47;
-        private Label label46;
-        private Label label44;
+        private Label lblTerbit;
+        private Label lblTerbenam;
         private Label label42;
         private Label label41;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btnTampilkan;
+        private TextBox TBKota;
         private Label label40;
+        private Button button1;
     }
 }

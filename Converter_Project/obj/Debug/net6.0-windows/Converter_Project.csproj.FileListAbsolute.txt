@@ -25,3 +25,6 @@ C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bi
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Npgsql.dll
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\Converter_Project.csproj.CopyComplete
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\irvan\source\repos\BelajarCSharp\Converter_Project\Converter_Project\obj\Debug\net6.0-windows\Converter_Project.Properties.Resources.resources
