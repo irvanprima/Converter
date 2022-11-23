@@ -42,7 +42,7 @@
             this.TabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnResetCuaca = new System.Windows.Forms.Button();
             this.lblDetailCuaca = new System.Windows.Forms.Label();
             this.lblCuaca = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
@@ -290,7 +290,7 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.button1);
+            this.tabPage7.Controls.Add(this.btnResetCuaca);
             this.tabPage7.Controls.Add(this.lblDetailCuaca);
             this.tabPage7.Controls.Add(this.lblCuaca);
             this.tabPage7.Controls.Add(this.picIcon);
@@ -315,16 +315,16 @@
             this.tabPage7.Text = "Cuaca";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnResetCuaca
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(543, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 35);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnResetCuaca.AutoSize = true;
+            this.btnResetCuaca.Location = new System.Drawing.Point(543, 19);
+            this.btnResetCuaca.Name = "btnResetCuaca";
+            this.btnResetCuaca.Size = new System.Drawing.Size(82, 35);
+            this.btnResetCuaca.TabIndex = 16;
+            this.btnResetCuaca.Text = "Reset";
+            this.btnResetCuaca.UseVisualStyleBackColor = true;
+            this.btnResetCuaca.Click += new System.EventHandler(this.btnResetCuaca_Click);
             // 
             // lblDetailCuaca
             // 
@@ -465,7 +465,7 @@
             this.btnTampilkan.TabIndex = 2;
             this.btnTampilkan.Text = "Tampilkan Cuaca";
             this.btnTampilkan.UseVisualStyleBackColor = true;
-            this.btnTampilkan.Click += new System.EventHandler(this.btnTampilkan_Click);
+            this.btnTampilkan.Click += new System.EventHandler(this.btnTampilkan_Click_1);
             // 
             // TBKota
             // 
@@ -541,6 +541,7 @@
             this.MenitBox.PlaceholderText = "Masukkan input dalam menit";
             this.MenitBox.Size = new System.Drawing.Size(240, 31);
             this.MenitBox.TabIndex = 20;
+            this.MenitBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MenitBox.TextChanged += new System.EventHandler(this.MenitBox_TextChanged);
             // 
             // DetikBox
@@ -588,6 +589,7 @@
             this.KonversiWaktu.TabIndex = 12;
             this.KonversiWaktu.Text = "Konversi";
             this.KonversiWaktu.UseVisualStyleBackColor = true;
+            this.KonversiWaktu.Click += new System.EventHandler(this.KonversiWaktu_Click_1);
             // 
             // label6
             // 
@@ -694,6 +696,7 @@
             this.button8.TabIndex = 22;
             this.button8.Text = "Jawab";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // PanjangPBox
             // 
@@ -741,6 +744,7 @@
             this.PanjangResetPemuaian.TabIndex = 17;
             this.PanjangResetPemuaian.Text = "Reset";
             this.PanjangResetPemuaian.UseVisualStyleBackColor = true;
+            this.PanjangResetPemuaian.Click += new System.EventHandler(this.PanjangResetPemuaian_Click);
             // 
             // PanjangJawabPemuaian
             // 
@@ -750,6 +754,7 @@
             this.PanjangJawabPemuaian.TabIndex = 16;
             this.PanjangJawabPemuaian.Text = "Jawab";
             this.PanjangJawabPemuaian.UseVisualStyleBackColor = true;
+            this.PanjangJawabPemuaian.Click += new System.EventHandler(this.PanjangJawabPemuaian_Click);
             // 
             // PPBox
             // 
@@ -993,6 +998,7 @@
             this.LuasResetPemuaian.TabIndex = 39;
             this.LuasResetPemuaian.Text = "Reset";
             this.LuasResetPemuaian.UseVisualStyleBackColor = true;
+            this.LuasResetPemuaian.Click += new System.EventHandler(this.LuasResetPemuaian_Click);
             // 
             // LuasJawabPemuaian
             // 
@@ -1002,6 +1008,7 @@
             this.LuasJawabPemuaian.TabIndex = 38;
             this.LuasJawabPemuaian.Text = "Jawab";
             this.LuasJawabPemuaian.UseVisualStyleBackColor = true;
+            this.LuasJawabPemuaian.Click += new System.EventHandler(this.LuasJawabPemuaian_Click_1);
             // 
             // LPBox
             // 
@@ -1255,6 +1262,7 @@
             this.VolumeJawabPemuaian.TabIndex = 38;
             this.VolumeJawabPemuaian.Text = "Jawab";
             this.VolumeJawabPemuaian.UseVisualStyleBackColor = true;
+            this.VolumeJawabPemuaian.Click += new System.EventHandler(this.VolumeJawabPemuaian_Click);
             // 
             // VPBox
             // 
@@ -1494,6 +1502,6 @@
         private Button btnTampilkan;
         private TextBox TBKota;
         private Label label40;
-        private Button button1;
+        private Button btnResetCuaca;
     }
 }
