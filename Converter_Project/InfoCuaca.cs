@@ -35,7 +35,7 @@ namespace Converter_Project
             public long sunset { get; set; }
         }
         public class root
-        {
+        {  
             public coord coord { get; set; }
             public List<weather> weather { get; set; }
             public main main { get; set; }

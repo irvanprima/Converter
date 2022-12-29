@@ -21,6 +21,7 @@ namespace Converter_Project
             if (double.TryParse(CelciusBox.Text, out c))
             {
                 c = Convert.ToDouble(CelciusBox.Text);
+
                 f = (c * 9 / 5) + 32;
                 r = (c * 4) / 5;
                 k = (c + 273.15);
@@ -54,18 +55,21 @@ namespace Converter_Project
         string APIKey = "9125fe4caf9b4adb07b6357fc12dd3cc";
         private void btnTampilkan_Click_1(object sender, EventArgs e)
         {
+            //membuat function
             tampilCuaca();
-        }        
+            //tampilKota();
+        }
         void tampilCuaca()
         {
             using (WebClient web = new WebClient())
             {
                 try
                 {
-                    string namaKota = TBKota.Text.ToString();
+                    string namaKota = ComboBox.Text.ToString();
 
                     string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q=" + namaKota + "&appid=" + APIKey);
                     var json = web.DownloadString(url);
+                    //mengubah format file json yang di download ke class (infoCuaca.cs)
                     InfoCuaca.root Info = JsonConvert.DeserializeObject<InfoCuaca.root>(json);
 
                     picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
@@ -85,16 +89,21 @@ namespace Converter_Project
             }
         }
 
+        //function untuk merubah format
         DateTime convertDateTime(long second)
         {
+            //second ini di kalkulasi dari 1970, bulan, hari, jam, menit, detik, milisecond
             DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
+            //jadi pada format tahun 1970 bakal ditambah second agar formatnya bisa jadi localtime/ format yg bener
             day = day.AddSeconds(second).ToLocalTime();
 
             return day;
         }
         private void btnResetCuaca_Click(object sender, EventArgs e)
         {
-            TBKota.Text = " ";
+            ComboBox.Text = "Masukkan nama kota";
+            //CBox.Text = " ";
+            //TBKota.Text = " ";
             lblCuaca.Text = "N/A";
             lblDetailCuaca.Text = "N/A";
             lblTerbenam.Text = "N/A";
@@ -103,7 +112,37 @@ namespace Converter_Project
             lblTekananUdara.Text = "N/A";
             picIcon.Image = null;
         }
-        
+
+        private void Converter_Load(object sender, EventArgs e)
+        {
+            //CBox.Items.Add("Yogyakarta");
+            //CBox.Items.Add("Sleman");
+            ComboBox.Text = "Masukkan nama kota";
+
+
+        }
+
+        /*void tampilKota()
+        {
+            using (WebClient web2 = new WebClient())
+            {
+                try
+                {
+                    string url = string.Format("https://raw.githubusercontent.com/manifestinteractive/openweathermap-cities/master/data/owm_city_list.json");
+                    var json = web2.DownloadString(url);
+                    nama_kota.root Info = JsonConvert.DeserializeObject<nama_kota.root>(json);
+
+                    
+                    CBox.Text = Info.RECORDS.owm_city_name;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Masukkan nama kota sesuai dengan dropdown\n" + $"'{ex.Message}'", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }*/
+
 
         //Waktu
         Double detik, menit, jam, hari;
@@ -136,6 +175,7 @@ namespace Converter_Project
         }
         private void ResetWaktu_Click(object sender, EventArgs e)
         {
+            KonversiWaktu.Enabled = false;
             MenitBox.Text = "";
             DetikBox.Text = "";
             JamBox.Text = "";
@@ -204,11 +244,14 @@ namespace Converter_Project
 
         //PEMUAIAN LUAS
         Double LA, KML, PLA;
+
+        
+
         /*  
-        LA = Luas Awal 
-        KML = Koefisien muai luas
-        PLA = Pemuaian luas after
-        */
+LA = Luas Awal 
+KML = Koefisien muai luas
+PLA = Pemuaian luas after
+*/
         Double PL; //Pemuaian luas
         private void LuasJawabPemuaian_Click_1(object sender, EventArgs e)
         {
